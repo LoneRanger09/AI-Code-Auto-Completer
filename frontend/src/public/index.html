@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Code Auto-Completer</title>
+</head>
+<body>
+    <h1>AI Code Auto-Completer</h1>
+    <textarea id="codeInput" rows="5" cols="50" placeholder="Enter your code..."></textarea>
+    <button onclick="getCompletion()">Generate</button>
+    <h2>Output:</h2>
+    <pre id="output"></pre>
+
+    <script>
+        async function getCompletion() {
+            const codeInput = document.getElementById("codeInput").value;
+            const response = await fetch("http://127.0.0.1:8000/predict/", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ prompt: codeInput })
+            });
+
+            const data = await response.json();
+            document.getElementById("output").innerText = data.completion;
+        }
+    </script>
+</body>
+</html>

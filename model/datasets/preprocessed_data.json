@@ -1,0 +1,14 @@
+[
+    {
+        "input": "def fibonacci(n):",
+        "output": "if n <= 0: return 0\nelif n == 1: return 1\nelse: return fibonacci(n-1) + fibonacci(n-2)"
+    },
+    {
+        "input": "for i in range(10):",
+        "output": "print(i)"
+    },
+    {
+        "input": "class Car:",
+        "output": "def __init__(self, model, year):\n    self.model = model\n    self.year = year"
+    }
+]
