@@ -57,6 +57,45 @@ git clone https://github.com/your-username/ai-code-autocompleter.git
 cd ai-code-autocompleter
 ```
 ## 🚀 Installation
+### 🧠 2. Backend Setup
+Create virtual environment:
+```bash
+cd backend
+python -m venv venv
+source venv/bin/activate   # On Windows: venv\Scripts\activate
+```
+### Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+### Run the FastAPI server:
+```bash
+uvicorn main:app --reload
+```
+Your backend will be running at http://127.0.0.1:8000
+### 💻 3. Frontend Setup (No npm required)
+Option 1: Use python -m http.server (Python 3)
+```bash
+cd ../frontend
+python -m http.server 8001
+```
+Open browser at: http://127.0.0.1:8001
+
+Option 2: Open index.html manually
+Simply double-click index.html to open it in a browser.
+## 📌 Notes
+Ensure both frontend and backend are running on correct ports (8001 and 8000)
+
+If CORS error occurs, verify backend has CORS middleware configured
+
+Model used: Salesforce/codet5-small
+
+## 🛠️ To Do
+ Add syntax highlighting in frontend
+
+ Add multiple language support
+
+ Improve prompt-engineering for accuracy
 
 ### Prerequisites
 - Python 3.7+
