@@ -102,12 +102,3 @@ Model used: Salesforce/codet5-small
 - Python 3.7+
 - pip
 
-### Quick Install
-```bash
-pip install ai-code-autocompleter
-```
-```bash
-git clone https://github.com/yourusername/ai-code-autocompleter.git
-cd ai-code-autocompleter
-pip install -e ".[dev]"
-```
