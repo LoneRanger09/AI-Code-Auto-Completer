@@ -27,6 +27,7 @@ ai-code-autocompleter/
 ├── index.html # Frontend UI │
 ├── style.css # (Optional) Styling for UI │
 └── script.js # JavaScript to call backend
+|
 ├── setup.sh # Shell script to set up environment
 └── README.md # Project documentation
 ```
