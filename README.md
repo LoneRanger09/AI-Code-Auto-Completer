@@ -5,10 +5,9 @@
 [![Python 3.7+](https://img.shields.io/badge/Python-3.7%2B-blue)](https://www.python.org/)
 [![Code Style: Black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
-An intelligent code completion tool powered by machine learning that predicts and suggests code in real-time, boosting developer productivity.
+An intelligent code auto-completion tool built using **CodeT5** model. This project provides a simple frontend interface for developers to input partial code snippets and get smart completions in real-time using a FastAPI backend.
 
 ---
-
 ## ✨ Features
 
 - **Context-Aware Suggestions** - Understands your code context for accurate completions
