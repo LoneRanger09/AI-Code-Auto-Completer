@@ -16,6 +16,46 @@ An intelligent code auto-completion tool built using **CodeT5** model. This proj
 - **Personalized Learning** - Adapts to your coding style over time
 - **Editor Agnostic** - Compatible with VSCode, PyCharm, Vim, and others
 
+## 📁 Project Structure
+```bash
+ai-code-autocompleter/
+├── backend/ │
+├── main.py # FastAPI server code │
+├── requirements.txt # Python dependencies
+│
+├── frontend/ │
+├── index.html # Frontend UI │
+├── style.css # (Optional) Styling for UI │
+└── script.js # JavaScript to call backend
+├── setup.sh # Shell script to set up environment
+└── README.md # Project documentation
+```
+
+---
+
+## 🧰 Tech Stack
+
+### 🔙 Backend
+- **FastAPI** – API server
+- **Transformers** (Hugging Face) – Pretrained CodeT5 model
+- **Uvicorn** – ASGI server
+- **Pydantic** – For request validation
+- **CORS Middleware** – For cross-origin communication
+
+### 🔜 Frontend
+- **HTML/CSS** – Basic user interface
+- **JavaScript (Fetch API)** – To send requests to backend
+
+---
+
+## 🚀 How to Run the Project
+
+### 📦 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/ai-code-autocompleter.git
+cd ai-code-autocompleter
+```
 ## 🚀 Installation
 
 ### Prerequisites
